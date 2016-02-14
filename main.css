@@ -1,0 +1,105 @@
+/*Css organized by tag type and alphabetical order. */
+/*This is the css ClearFix*/
+
+body {
+    min-height: 2000px;
+    padding-top: 70px;
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+    color: #0E0700;
+}
+footer {
+    background-color: #633B11;
+    color: #FFDCB7;
+    padding-top: 15px;
+    padding-left: 28px;
+}
+/* Class tags */
+.dates {
+    float: left;
+    margin-top: 55px;
+    text-align: center;
+    line-height: 32px;
+}
+.dates1 {
+    float: left;
+    text-align: center;
+}
+.job {
+     margin-left: 150px;
+}
+.job p {
+    margin-left: 15px;
+}
+.navbar-default {
+    padding-top: 32px;
+    background-color: #633B11;
+}
+
+.navbar-name {
+    color: #FFDCB7;
+    font-size: 32px;
+    margin-top: -10px;
+}
+.school {
+    margin-left: 150px;
+   /* border-bottom: 1px solid #0E0700;*/
+}
+.school p {
+    margin-left: 15px;
+}
+.success {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.title {
+    font-weight: 700;
+    font-size:1.2em;
+    letter-spacing: 1.3px;
+}
+/* Id Tags */
+
+#education h1 {
+    margin-left: 178px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-weight: 800;
+}
+#experience h1 {
+    margin-left: 55px;
+    margin-bottom: 32px;
+    margin-top: 30px;
+    font-weight: 800;
+}
+#navbar {
+    color:#FFDCB7;
+}
+#profile {
+    margin-left: 30px;
+    margin-top: 75px;
+    width: 253px;
+    height: 625px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    line-height: 40px;
+    background-color: #B57B3f;
+}
+#profile h3 {
+    text-align: center;
+}
+#profile p {
+    color: #FFDCB7;
+    text-align: center;
+}
+#references h1 {
+    margin-left: 55px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-weight: 800;
+}
+#skills h1 {
+    margin-left: 55px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-weight: 800;
+}

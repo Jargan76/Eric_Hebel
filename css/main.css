@@ -43,12 +43,14 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*------------------------------------------------------------------------------------------------------------------------*/
 /*This is the begining of the main.css*/
 body {
-    min-height: 2000px;
-    padding-top: 70px;
+    min-height: 5em;
+    padding-top: 3.889em;
     font-family: 'Slabo 27px', serif;
-    font-size: 18px;
+    font-size: 1em;
+    line-height: 1.21em;
     color: #0E0700;
 }
 footer {
@@ -102,17 +104,12 @@ footer {
 }
 /* Id Tags */
 
-#education h1 {
-    margin-left: 178px;
-    margin-bottom: 20px;
-    margin-top: 30px;
-    font-weight: 800;
-}
-#experience h1 {
-    margin-left: 55px;
+#experience h1, #skills h1, #references h1, #education h1 {
     margin-bottom: 32px;
-    margin-top: 30px;
     font-weight: 800;
+    font-size: 2em;
+    margin-top: 1.8em;
+    margin-left: 2em;
 }
 #navbar {
     color:#FFDCB7;

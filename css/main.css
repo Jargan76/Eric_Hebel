@@ -53,12 +53,19 @@ body {
     line-height: 1.21em;
     color: #0E0700;
 }
+button.navbar-toggle.collapsed {
+    background-color:#633B11;	
+}
+button.navbar-toggle.collapsed:hover {
+    background-color: burlywood;
+}
 footer {
     background-color: #633B11;
     color: #FFDCB7;
     padding-top: 15px;
     padding-left: 28px;
 }
+
 /* Class tags */
 .dates {
     float: left;
@@ -80,7 +87,6 @@ footer {
     padding-top: 32px;
     background-color: #633B11;
 }
-
 .navbar-name {
     color: #FFDCB7;
     font-size: 32px;

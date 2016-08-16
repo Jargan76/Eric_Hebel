@@ -171,18 +171,3 @@ ol {
 }
 /*at media styles go here*/
 /*Organized by size small to large*/
-
-@media screen and (max-width: 470px ) {
-    #profile {
-        margin: 0;
-        width: 100%;
-        height: 8em;
-        display:inline-table;
-        line-height: 1.5em;
-    }
-}
-@media screen and (max-width: 991px ) {
-    #profile {
-
-    }
-}

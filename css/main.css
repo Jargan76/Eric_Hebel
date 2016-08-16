@@ -46,6 +46,11 @@ table {
 }
 /*------------------------------------------------------------------------------------------------------------------------*/
 /*This is the begining of the main.css*/
+a {
+    color: #FFDCB7;
+    text-shadow: 2px 2px 1px #000;
+}
+
 body {
     min-height: 5em;
     width: 100%;
@@ -71,6 +76,11 @@ li {
     text-align: center;
 }
 /* Class tags */
+.btn-info {
+    font-size: 1.4em;
+    background-color: #633B11;
+}
+
 .col-xs-4  {
     margin-bottom: 0.8em;
 }
@@ -81,6 +91,7 @@ li {
 .col-xs-9 {
     border-left:1px dashed #FFDCB7;
 }
+
 
 .companyName {
     text-align: center;
@@ -104,6 +115,15 @@ li {
     background-color: #FFDCB7;
 }
 
+.navbar-default .navbar-nav>li>a {
+    color: #FFDCB7;
+}
+.navbar-default .navbar-nav>li>a:focus {
+    color: #FFDCB7;
+    border:1px solid #FFDCB7;
+}
+
+
 .navbar-default {
     padding-top: 32px;
     background-color: #633B11;
@@ -112,27 +132,20 @@ li {
     color: #FFDCB7;
     font-size: 32px;
     margin-top: -10px;
+    margin-left: 0.5em;
 }
 
 .phone{
-    font-size: 14px;
-}
-
-.school {
-    margin-left: 150px;
-   /* border-bottom: 1px solid #0E0700;*/
-}
-.school p {
-    margin-left: 15px;
+    font-size: 1em;
 }
 .success {
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 0.05em;
 }
 .title {
     font-weight: 700;
     font-size:1.2em;
-    letter-spacing: 1.3px;
+    letter-spacing: 0.05em;
 }
 /* Id Tags */
 #experience, #skills {
@@ -149,10 +162,7 @@ li {
     color:#FFDCB7;
 }
 #profile {
-    margin-left: 2em;
-    margin-top: 3em;
     width: 100%;
-    height: auto;
     padding-top: 20px;
     padding-bottom: 15px;
     line-height: 40px;
@@ -175,4 +185,16 @@ li {
 
 /*at media styles go here*/
 /*Organized by size small to large*/
-
+@media screen and (max-width: 490px ){
+      .col-xs-3 {
+        width: 100%;
+        margin-bottom: 0.5em;
+      }
+      .col-xs-9 {
+        width: 100%;
+        text-align: center;
+      }
+}
+@media screen and (max-width: 768px ){
+   }
+}

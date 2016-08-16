@@ -28,7 +28,6 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-
 ol, ul {
 	list-style: none;
 }
@@ -80,26 +79,21 @@ li {
     font-size: 1.4em;
     background-color: #633B11;
 }
-
 .col-xs-4  {
     margin-bottom: 0.8em;
 }
 .col-xs-6 {
     text-align: center;
 }
-
 .col-xs-9 {
-    border-left:1px dashed #FFDCB7;
+    border-left:0.1em dashed #FFDCB7;
 }
-
-
 .companyName {
     text-align: center;
     font-size: 1.7em;
     text-shadow: 2px 2px 2px #dcdc4b;
     margin-bottom: 1em;
 }
-
 .dates {
     text-align: center;
     line-height: 32px;
@@ -108,13 +102,11 @@ li {
     float: left;
     text-align: center;
 }
-
 .muted {
     color: #000;
     font-size: 0.7em;
     background-color: #FFDCB7;
 }
-
 .navbar-default .navbar-nav>li>a {
     color: #FFDCB7;
 }
@@ -122,8 +114,6 @@ li {
     color: #FFDCB7;
     border:1px solid #FFDCB7;
 }
-
-
 .navbar-default {
     padding-top: 32px;
     background-color: #633B11;
@@ -134,9 +124,14 @@ li {
     margin-top: -10px;
     margin-left: 0.5em;
 }
-
 .phone{
     font-size: 1em;
+}
+.row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: initial;
 }
 .success {
     font-weight: 600;
@@ -151,7 +146,6 @@ li {
 #experience, #skills {
     border:1px solid #FFDCB7;
 }
-
 #education h1, #experience h1, #skills h1, #references h1 {
     font-size: 2.5em;
     margin-bottom: 1.5em;
@@ -175,26 +169,103 @@ li {
 #references {
     text-align: center;
 }
-
 #name, #aDress, #pNum, #myEmail, #mySite {
     color: #FFDCB7;
     text-align: center;
     font-weight: 500;
 }
-
-
 /*at media styles go here*/
 /*Organized by size small to large*/
 @media screen and (max-width: 490px ){
+      html, body, div, span, applet, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, acronym, address, big, cite, code,
+      del, dfn, em, img, ins, kbd, q, s, samp,
+      small, strike, strong, sub, sup, tt, var,
+      b, u, i, center,
+      dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td,
+      article, aside, canvas, details, embed,
+      figure, figcaption, footer, header, hgroup,
+      menu, nav, output, ruby, section, summary,
+      time, mark, audio, video, .container {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    button.navbar-toggle.collapsed {
+        margin-right: 1.5em;
+    }
+    h3 {
+        font-size:1.5em;
+    }
+    p {
+        font-size: 1.3em;
+        font-family: sans-serif;
+    }
+    .title {
+        font-size: 2em;
+        margin: 0.2em 0;
+    }
       .col-xs-3 {
         width: 100%;
         margin-bottom: 0.5em;
-      }
+       }
+       .col-xs-6 {
+        width
+       }
       .col-xs-9 {
         width: 100%;
+        right: 0px;
+        left: 0px;
+        border-left: none;
+        border-top: 0.1em dashed #FFDCB7;
         text-align: center;
       }
+        .navbar-name {
+            margin-left: 1em;
+        }
+      #education h1, #experience h1, #skills h1, #references h1 {
+        font-size: 3.5em;
+        margin-bottom: 0.8em;
+        margin-top: 0.8em;
+        text-align: center;
+    }
 }
-@media screen and (max-width: 768px ){
-   }
+@media screen and (max-width: 519px ){
+    @media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+}
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+  html,
+  body{
+    width:100%;
+    overflow-x:show;
+  }
+
+}
+@media screen and (max-width: 350px) {
+    .btn-info {
+        font-size: 1.2em;
+    }
 }

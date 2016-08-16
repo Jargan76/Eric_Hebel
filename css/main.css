@@ -235,6 +235,9 @@ li {
         margin-top: 0.8em;
         text-align: center;
     }
+    #profile {
+    	margin-top:50px;
+    }
 }
 @media screen and (max-width: 519px ){
     @media

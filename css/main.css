@@ -20,17 +20,6 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* This is the IE10 veiw port hack for Surface and Desktop Windows 8 Bug 
-@-ms-viewport {
-	width: device-width;
-}
-@-o-viewport {
-	width: device-width;
-}
-@viewport {
-	width: device-width;
-}
-*/
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -39,6 +28,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -58,14 +48,15 @@ table {
 /*This is the begining of the main.css*/
 body {
     min-height: 5em;
+    width: 100%;
     padding-top: 3.889em;
     font-family: 'Slabo 27px', serif;
-    font-size: 1em;
+    font-size: 1.3em;
     line-height: 1.21em;
     color: #0E0700;
 }
 button.navbar-toggle.collapsed {
-    background-color:#633B11;	
+    background-color:#633B11;
 }
 button.navbar-toggle.collapsed:hover {
     background-color: burlywood;
@@ -76,20 +67,29 @@ footer {
     padding-top: 15px;
     padding-left: 28px;
 }
-<<<<<<< HEAD
-ul {
-    margin-left: 2em;
+li {
+    text-align: center;
 }
-ol {
-    margin-left: 1em;
-}
-=======
-
->>>>>>> origin/gh-pages
 /* Class tags */
+.col-xs-4  {
+    margin-bottom: 0.8em;
+}
+.col-xs-6 {
+    text-align: center;
+}
+
+.col-xs-9 {
+    border-left:1px dashed #FFDCB7;
+}
+
+.companyName {
+    text-align: center;
+    font-size: 1.7em;
+    text-shadow: 2px 2px 2px #dcdc4b;
+    margin-bottom: 1em;
+}
+
 .dates {
-    float: left;
-    margin-top: 55px;
     text-align: center;
     line-height: 32px;
 }
@@ -97,12 +97,13 @@ ol {
     float: left;
     text-align: center;
 }
-.job {
-     margin-left: 150px;
+
+.muted {
+    color: #000;
+    font-size: 0.7em;
+    background-color: #FFDCB7;
 }
-.job p {
-    margin-left: 15px;
-}
+
 .navbar-default {
     padding-top: 32px;
     background-color: #633B11;
@@ -112,6 +113,11 @@ ol {
     font-size: 32px;
     margin-top: -10px;
 }
+
+.phone{
+    font-size: 14px;
+}
+
 .school {
     margin-left: 150px;
    /* border-bottom: 1px solid #0E0700;*/
@@ -129,13 +135,15 @@ ol {
     letter-spacing: 1.3px;
 }
 /* Id Tags */
+#experience, #skills {
+    border:1px solid #FFDCB7;
+}
 
-#experience h1, #skills h1, #references h1, #education h1 {
-    margin-bottom: 32px;
-    font-weight: 800;
-    font-size: 2em;
+#education h1, #experience h1, #skills h1, #references h1 {
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
     margin-top: 1.8em;
-    margin-left: 2em;
+    text-align: center;
 }
 #navbar {
     color:#FFDCB7;
@@ -143,7 +151,7 @@ ol {
 #profile {
     margin-left: 2em;
     margin-top: 3em;
-    width: 253px;
+    width: 100%;
     height: auto;
     padding-top: 20px;
     padding-bottom: 15px;
@@ -152,22 +160,19 @@ ol {
 }
 #profile h3 {
     text-align: center;
+    font-weight: 800;
 }
-#profile p {
-    color: #FFDCB7;
+#references {
     text-align: center;
 }
-#references h1 {
-    margin-left: 55px;
-    margin-bottom: 20px;
-    margin-top: 30px;
-    font-weight: 800;
+
+#name, #aDress, #pNum, #myEmail, #mySite {
+    color: #FFDCB7;
+    text-align: center;
+    font-weight: 500;
 }
-#skills h1 {
-    margin-left: 55px;
-    margin-bottom: 20px;
-    margin-top: 30px;
-    font-weight: 800;
-}
+
+
 /*at media styles go here*/
 /*Organized by size small to large*/
+

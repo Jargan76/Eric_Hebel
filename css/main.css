@@ -49,7 +49,9 @@ a {
     color: #FFDCB7;
     text-shadow: 2px 2px 1px #000;
 }
-
+a:hover {
+    text-decoration:none;	
+}
 body {
     min-height: 5em;
     width: 100%;
@@ -78,6 +80,12 @@ li {
 .btn-info {
     font-size: 1.4em;
     background-color: #633B11;
+    box-shadow:2px 3px 5px #f1eeee;
+}
+.btn-info:hover {
+    background-color: #ffdcb7;
+    color: #633b11;
+    border-color: transparent;
 }
 .col-xs-4  {
     margin-bottom: 0.8em;

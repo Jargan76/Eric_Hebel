@@ -50,8 +50,10 @@ a {
     text-shadow: 2px 2px 1px #000;
 }
 a:hover {
-    text-decoration:none;	
+    text-decoration:none;
+    color: #633b11;
 }
+  
 body {
     min-height: 5em;
     width: 100%;
@@ -81,11 +83,12 @@ li {
     font-size: 1.4em;
     background-color: #633B11;
     box-shadow:2px 3px 5px #f1eeee;
+    border-color: transparent;
 }
 .btn-info:hover {
     background-color: #ffdcb7;
     color: #633b11;
-    border-color: transparent;
+    border: 1px solid #633b11;
 }
 .col-xs-4  {
     margin-bottom: 0.8em;
@@ -153,6 +156,7 @@ li {
 /* Id Tags */
 #experience, #skills {
     border:1px solid #FFDCB7;
+    line-height: 2em;
 }
 #education h1, #experience h1, #skills h1, #references h1 {
     font-size: 2.5em;

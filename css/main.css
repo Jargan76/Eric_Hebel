@@ -5,13 +5,13 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+b, u, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
+menu, nav, output, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -49,11 +49,9 @@ a {
     color: #FFDCB7;
     text-shadow: 2px 2px 1px #000;
 }
-a:hover {
-    text-decoration:none;
-    color: #633b11;
+a:focus, a:hover {
+    text-decoration: none;
 }
-  
 body {
     min-height: 5em;
     width: 100%;
@@ -73,7 +71,6 @@ footer {
     background-color: #633B11;
     color: #FFDCB7;
     padding-top: 15px;
-    padding-left: 28px;
 }
 li {
     text-align: center;
@@ -82,13 +79,6 @@ li {
 .btn-info {
     font-size: 1.4em;
     background-color: #633B11;
-    box-shadow:2px 3px 5px #f1eeee;
-    border-color: transparent;
-}
-.btn-info:hover {
-    background-color: #ffdcb7;
-    color: #633b11;
-    border: 1px solid #633b11;
 }
 .col-xs-4  {
     margin-bottom: 0.8em;
@@ -98,6 +88,9 @@ li {
 }
 .col-xs-9 {
     border-left:0.1em dashed #FFDCB7;
+}
+.col-xs-12 {
+  text-align: center;
 }
 .companyName {
     text-align: center;
@@ -112,6 +105,11 @@ li {
 .dates1 {
     float: left;
     text-align: center;
+}
+.img-circle {
+  height: 10em;
+  width: auto;
+  background-color: #FFDCB7;
 }
 .muted {
     color: #000;
@@ -144,19 +142,46 @@ li {
     margin-right: auto;
     max-width: initial;
 }
+.standOut {
+  text-decoration: underline;
+  font-size: 2em;
+}
+.skills {
+  margin-bottom: 1em;
+}
+
 .success {
     font-weight: 600;
     letter-spacing: 0.05em;
 }
+
+
 .title {
     font-weight: 700;
     font-size:1.2em;
     letter-spacing: 0.05em;
 }
+/*  SVG tags  */
+/*  this is js  */
+  .st0{fill:#FCEE21;stroke:#000000;stroke-miterlimit:10;}
+  .st1{stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
+  .st2{font-family:'TrebuchetMS-Bold';}
+  .st3{font-size:160.3127px;}
+/*================  Skills tags*/
+  #htmlSkill, #cssSkill, #jsSkill, #nodeJSSkill, #gitSkill, #expressSkill {
+    width: 5em;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 /* Id Tags */
+#html {
+  box-shadow: 1px 1px 5px #111;
+}
+
 #experience, #skills {
     border:1px solid #FFDCB7;
-    line-height: 2em;
 }
 #education h1, #experience h1, #skills h1, #references h1 {
     font-size: 2.5em;
@@ -164,9 +189,30 @@ li {
     margin-top: 1.8em;
     text-align: center;
 }
+#github, #linkedin {
+  width: 5em;
+  height: 5em;
+}
 #navbar {
     color:#FFDCB7;
 }
+#objective {
+  margin-top: -0.8em;
+  text-align: center;
+  background-color: #FFDCB7;
+  color: #633B11;
+  border: 0.3em solid #633B11;
+  border-bottom: transparent;
+}
+#objective h2 {
+  margin: 0.5em auto;
+  font-size: 2em;
+  font-weight: 600;
+}
+#objective p {
+  margin: 1em auto;
+}
+
 #profile {
     width: 100%;
     padding-top: 20px;
@@ -186,6 +232,16 @@ li {
     text-align: center;
     font-weight: 500;
 }
+
+@media screen and (max-width: 350px) {
+    .btn-info {
+        font-size: 1.2em;
+    }
+    #htmlSkill, #cssSkill, #jsSkill, #nodeJSSkill, #gitSkill, #expressSkill {
+    width: 4em;
+    height: auto;
+    }
+}
 /*at media styles go here*/
 /*Organized by size small to large*/
 @media screen and (max-width: 490px ){
@@ -194,13 +250,13 @@ li {
       a, abbr, acronym, address, big, cite, code,
       del, dfn, em, img, ins, kbd, q, s, samp,
       small, strike, strong, sub, sup, tt, var,
-      b, u, i, center,
+      b, u, i,
       dl, dt, dd, ol, ul, li,
       fieldset, form, label, legend,
       table, caption, tbody, tfoot, thead, tr, th, td,
       article, aside, canvas, details, embed,
       figure, figcaption, footer, header, hgroup,
-      menu, nav, output, ruby, section, summary,
+      menu, nav, output, section, summary,
       time, mark, audio, video, .container {
       margin: 0;
       padding: 0;
@@ -208,6 +264,9 @@ li {
       font-size: 100%;
       font: inherit;
       vertical-align: baseline;
+    }
+    a:hover, a:focus {
+      text-decoration: none;
     }
     button.navbar-toggle.collapsed {
         margin-right: 1.5em;
@@ -219,6 +278,18 @@ li {
         font-size: 1.3em;
         font-family: sans-serif;
     }
+      .navbar-default .navbar-toggle {
+        margin-right: 1.5em;
+      }
+      .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover,
+      .navbar-default .navbar-toggle:active {
+        margin-right: 1.5em;
+        background-color: #fedbb6;
+      }
+      .navbar-default .navbar-toggle:visited {
+        background-color: #633b11;
+      }
+
     .title {
         font-size: 2em;
         margin: 0.2em 0;
@@ -246,10 +317,20 @@ li {
         margin-bottom: 0.8em;
         margin-top: 0.8em;
         text-align: center;
-    }
-    #profile {
-    	margin-top:60px;
-    }
+        }
+        #objective {
+          margin-top: 4em;
+        }
+        #profile {
+            line-height: 30px;
+        }
+        #profileInfo{
+          margin: 0em auto;
+        }
+        #profilePic {
+          visibility: hidden;
+          width: 5em;
+        }
 }
 @media screen and (max-width: 519px ){
     @media
@@ -262,10 +343,16 @@ only screen and (min-device-pixel-ratio: 1.5){
   body{
     width:100%;
     overflow-x:hidden;
-  }
+    }
 
+  }
 }
+@media screen and (min-width:491,  max-width:769px){
+  #objective {
+    margin-top: -1.1em;
+  }
 }
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -275,12 +362,8 @@ only screen and (min-device-pixel-ratio: 1.5){
   html,
   body{
     width:100%;
-    overflow-x:show;
+    overflow-x: auto;
   }
 
 }
-@media screen and (max-width: 350px) {
-    .btn-info {
-        font-size: 1.2em;
-    }
-}
+

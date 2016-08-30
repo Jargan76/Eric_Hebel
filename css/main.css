@@ -13,35 +13,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /*------------------------------------------------------------------------------------------------------------------------*/
 /*This is the begining of the main.css*/
@@ -197,7 +197,7 @@ li {
     color:#FFDCB7;
 }
 #objective {
-  margin-top: -0em;
+  margin-top: -0.8em;
   text-align: center;
   background-color: #FFDCB7;
   color: #633B11;
@@ -242,6 +242,28 @@ li {
     height: auto;
     }
 }
+
+/*============================
+*   Coming Soon Page
+*=============================*/
+.comingSoon, .comingSoon h1 {
+  padding:1em 1em;
+  text-align: center;
+  font-size: 3.5em
+  font-weight:700;
+  font-family: sans-serif;
+}
+#tShirt {
+  font-size: 1em;
+  padding: 0.8em 0.8em;
+  margin: 0;
+
+}
+
+
+/*=============================*/
+
+
 /*at media styles go here*/
 /*Organized by size small to large*/
 @media screen and (max-width: 490px ){
